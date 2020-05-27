@@ -1,0 +1,156 @@
+
+{% block body %}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+       body, html {
+
+  background-image:url("/images/logos/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+
+  margin: 0;
+    height: auto;
+  width: 100%;
+}
+
+      .navbar {
+  min-height: 20px;
+}
+.navbar-brand {
+  padding: 0 15px;
+  height: 20px;
+  line-height: 20px;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-info navbar-dark  justify-content-center">
+  
+  <a class="navbar-brand" href="{{ 'university' }}" color="#3366ff" style="width:80px;">
+      <img src="/images/logos/dp.svg" alt="logo" style="width:40px;">
+  </a>
+        <h20 class="text-white"><small>République Tunisienne <br>
+          Ministère de l’Enseignement Supérieur et de la Recherche Scientifique<br>
+          université de SFAX </small></h20>
+
+
+  
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+       <i class="fa fa-reorder text-white"></i>
+       <li class="nav-item">
+       <a class="nav-link" href="#">Links</a> 
+       </li>
+       <i class="material-icons text-white" >&#xe060;</i>
+
+           <li class="nav-item">
+           <a class="nav-link" href="#">latest</a>
+             </li>
+             <i style="font-size:24px" class="fa text-white">&#xf0ce;</i>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Calender</a>
+    </li>
+    <i style="font-size:24px" class="fa text-white">&#xf232;</i>
+
+      <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+  
+              
+              
+<!-- Navigation bar with social media icons -->
+<div class="navbar navbar-white navbar-expand-sm   nabbar-hide-small  justify-content-center">
+         <img src="/images/logos/isaas.png" alt="logo" style="width:500px; height:70px">
+  </a>
+  
+
+         <a href="#" class="w3-bar-item w3-button text-white w3-right"><i class="fa fa-facebook-official"></i></a>
+         <a href="#" class="w3-bar-item w3-button text-white  w3-right"><i class="fa fa-instagram"></i></a>
+         <a href="#" class="w3-bar-item w3-button text-white  w3-right"><i class="fa fa-snapchat"></i></a>
+         <a href="#" class="w3-bar-item w3-button  text-white w3-right"><i class="fa fa-flickr"></i></a>
+         <a href="#" class="w3-bar-item w3-button text-white w3-right"><i class="fa fa-twitter"></i></a>
+         <a href="#" class="w3-bar-item w3-button text-white w3-right"><i class="fa fa-linkedin"></i></a>
+ <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search">
+                 <input class="form-control mr-sm-2 fa fa-search" type="text" placeholder="Search"></i></a>
+
+             
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+     <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+
+</div>
+
+  
+      
+
+
+
+</body>
+</html>
+
+   
+{% endblock %}

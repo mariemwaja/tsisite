@@ -1,0 +1,9 @@
+
+{%  extends 'base.html.twig' %}
+{% block body %}
+    <h1>first page</h1> 
+    {% for image in image  %}
+        <img src="data:image/png;base64,{{ image.image }}">
+        {% endfor %}
+{% endblock %}
+ {% block javascripts %}{% endblock %}
